@@ -245,38 +245,6 @@ def validate(idf,pwv):
 			time.sleep(31)
 	loop+=1
 
-def superuser():
-  UMO="SABUN==> "
-  uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "5".join(uuid)
-  SABUN = requests.get("https://github.com/kentang13336/making..py/blob/main/LICENSE.txt").text
-  if id in SABUN:
-  	Start()
-  else:
-    os.system("clear")
-    time.sleep(3.0)
-    os.system("clear")
-    cetak(Panel(f"""
-
-
-█████████████████████████████████████████
-█▄─▄███▄─▄█─▄▄▄─█▄─▄▄─█▄─▀█▄─▄█─▄▄▄▄█▄─▄█
-██─██▀██─██─███▀██─▄█▀██─█▄▀─██▄▄▄▄─██─██
-▀▄▄▄▄▄▀▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▄▄▄▀
-                                            
-                                            
-             """,width=60,title=f"kentang",style=f"bold cyan"))
-    print ("")
-    print (f" KEY ANDA : "+UMO+id)
-    print ("\n")
-    name = input(f"{G}NAMA ANDA SIAPA : ")
-    print ("")
-    input(f"{R} Tekan Enter Untuk Mengirim Kunci")
-    tks = 'Hello%20Sir%20!%2I%20Want%20To%20Buy%20This%20Tools%20My%20Key%20:%20' + id
-    os.system("xdg-open https://wa.me/+6283841015077")
-    superuser()
-
-superuser()
 #━━━━━━━━━━━[ SYSTEM CONTROL ]━━━━━━━━━━━#	
 def sabun():
 	try:os.system('git pull')
